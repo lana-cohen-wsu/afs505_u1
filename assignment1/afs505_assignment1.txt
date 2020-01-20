@@ -1,0 +1,47 @@
+$ pwd
+/mnt/c/Users/lana.cohen/Documents
+$ cd ../Desktop
+$ cd afs505_u1
+$ ls
+assignment1  assignment3  assignment5  readme
+assignment2  assignment4  project
+$ mkdir test
+$ rmdir test
+$ ls
+assignment1  assignment3  assignment5  readme
+assignment2  assignment4  project      text.txt
+$ cp text.txt assignment1/
+$ cd assignment1
+$ mv text.txt afs505_assignment1
+$ rm text.txt
+$ cat afs505_assignment1 > newfile
+$ ls
+afs505_assignment1  newfile
+$ ls -l
+total 0
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 18 10:54 assignment1
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:17 assignment2
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:17 assignment3
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:17 assignment4
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:17 assignment5
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:26 project
+-rwxrwxrwx 1 lanacohen lanacohen   39 Jan 16 11:28 readme
+$ touch assignment2
+$ ls -l
+total 0
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 18 10:54 assignment1
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 18 10:56 assignment2
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:17 assignment3
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:17 assignment4
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:17 assignment5
+drwxrwxrwx 1 lanacohen lanacohen 4096 Jan 16 11:26 project
+-rwxrwxrwx 1 lanacohen lanacohen   39 Jan 16 11:28 readme
+
+$ more +10 newfile
+$ ls
+assignment1  assignment3  assignment5  readme
+assignment2  assignment4  project      text.txt
+$ cp text.txt assignment1/
+$ cd assignment1
+$ mv text.txt afs505_assignment1
+$ less newfile
